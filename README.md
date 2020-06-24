@@ -24,4 +24,4 @@ For this challenge I made a scheduling application that will save tasks to be do
 
         I added classes to change the background color based on if the hour had past, is right now or is coming later.
 
-        ![image of project](projectimage)
+        ![image of project](images/projectimage.jpg)
