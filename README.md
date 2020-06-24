@@ -16,7 +16,7 @@ For this challenge I made a scheduling application that will save tasks to be do
 
     ## Use of Moment JS
 
-        First I used Moment.JS to show what the current date is at the top of the page
+        First I used Moment.JS to show what the current date is at the top of the pagegitt 
 
         I used a for loop to grab all of the hour elements
 
