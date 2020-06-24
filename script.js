@@ -35,8 +35,11 @@ for(let i = 0; i<rowsArray.length; i++) {
     }
    
 }
+    
+// for(let i=0; i<rowsArray.length; i++){
+//     var rowArr [i]
 
-
+// }
 
 $(document).on('click','button', function(e) {
     //console.log($(this));
@@ -44,15 +47,23 @@ $(document).on('click','button', function(e) {
     console.log(val);
     let parentId = $(this).parent().attr("id")
     console.log(parentId)
-    workingArray.push(
+    
+
+    
+    
+    
+   
+        workingArray.push(
         {
             "text": val, 
             "id": parentId
         }
     )
     console.log(workingArray)
-    localStorage.setItem('schedule', JSON.stringify(workingArray))
-})
+    
+
+     localStorage.setItem('schedule', JSON.stringify(workingArray))
+ })
 
 let schedule = JSON.parse(localStorage.getItem('schedule'))
 console.log(schedule);
@@ -62,18 +73,8 @@ for (let i = 0; i < schedule.length; i++) {
     console.log(text, id)
     let hourContainer = $(`#${id}`);
     hourContainer.find('input').val(text)
-}
-/*var buttons = $(":button");
-var inputs = $(":input");
-for(let i=0; i<inputs.length; i++){
-   var inputsArr = inputs[i]
-   var inputNumber = inputsArr.getAttribute("id");
-   var taskToDo = inputs
-   
-   console.log(inputNumber)
-   
+ }
 
-}*/
 
 
 
